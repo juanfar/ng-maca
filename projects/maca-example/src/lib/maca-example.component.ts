@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'maca-example',
   template: `
     <p>
-      maca-example works!
+      maca-example workss212!
     </p>
   `,
   styles: [
