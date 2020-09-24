@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './showcase/example/example.component';
 import { MacaExampleModule } from 'maca-example';
+import { MacaJoinPipeModule } from 'maca-join-pipe';
+import { JoinPipeComponent } from './showcase/join-pipe/join-pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent
+    ExampleComponent,
+    JoinPipeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MacaExampleModule
+    MacaExampleModule,
+    MacaJoinPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

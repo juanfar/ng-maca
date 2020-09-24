@@ -19,6 +19,10 @@
       "maca-example": [
         "dist/maca-example/maca-example",
         "dist/maca-example"
+      ],
+      "maca-join-pipe": [
+        "dist/maca-join-pipe/maca-join-pipe",
+        "dist/maca-join-pipe"
       ]
     }
   },
