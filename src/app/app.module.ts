@@ -7,18 +7,22 @@ import { ExampleComponent } from './showcase/example/example.component';
 import { MacaExampleModule } from 'maca-example';
 import { MacaJoinPipeModule } from 'maca-join-pipe';
 import { JoinPipeComponent } from './showcase/join-pipe/join-pipe.component';
+import { SpinnerComponent } from './showcase/spinner/spinner.component';
+import { MacaSpinnerModule } from 'maca-spinner';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
-    JoinPipeComponent
+    JoinPipeComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MacaExampleModule,
-    MacaJoinPipeModule
+    MacaJoinPipeModule,
+    MacaSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

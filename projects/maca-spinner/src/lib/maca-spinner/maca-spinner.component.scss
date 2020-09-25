@@ -1,0 +1,35 @@
+maca-spinner .overlay {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  cursor: default;
+}
+
+maca-spinner .overlay-embedded {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  cursor: default;
+}
+
+maca-spinner .spinner {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+}
+
+maca-spinner .spinner-embedded {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+}

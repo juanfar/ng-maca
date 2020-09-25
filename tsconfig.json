@@ -23,6 +23,10 @@
       "maca-join-pipe": [
         "dist/maca-join-pipe/maca-join-pipe",
         "dist/maca-join-pipe"
+      ],
+      "maca-spinner": [
+        "dist/maca-spinner/maca-spinner",
+        "dist/maca-spinner"
       ]
     }
   },

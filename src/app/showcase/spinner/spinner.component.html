@@ -1,0 +1,18 @@
+<div>
+  {{'Modo Actual: ' + (embedded ? 'Embebido' : 'No esta embebido')}}
+</div>
+
+<div>
+  <button (click)="activarSpinner()">Activar spinner</button>
+  <button (click)="cambiarModo()">Cambiar modo</button>
+</div>
+
+<div class="embedded">
+
+  <maca-spinner *ngIf="embedded" [embedded]="true"></maca-spinner>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, aut esse. Rerum sed minus minima eius. Laudantium, velit dolorum itaque, asperiores ducimus nemo vero laborum qui vitae odit voluptates necessitatibus.
+  </p>
+</div>
+
+<maca-spinner *ngIf="!embedded"></maca-spinner>
