@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~9.1.1",
     "@angular/platform-browser-dynamic": "~9.1.1",
     "@angular/router": "~9.1.1",
+    "maca-click-outside": "file:dist/maca-click-outside",
     "maca-example": "^1.0.1",
     "maca-join-pipe": "1.0.0",
     "maca-spinner": "1.0.0",

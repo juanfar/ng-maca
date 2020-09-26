@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ClickOutsideComponent } from './showcase/click-outside/click-outside.component';
 import { ExampleComponent } from './showcase/example/example.component';
 import { JoinPipeComponent } from './showcase/join-pipe/join-pipe.component';
 import { SpinnerComponent } from './showcase/spinner/spinner.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'maca-join-pipe', component: JoinPipeComponent },
   { path: 'maca-spinner', component: SpinnerComponent },
   { path: 'maca-toast', component: ToastComponent },
+  { path: 'maca-click-outside', component: ClickOutsideComponent },
 
 ];
 

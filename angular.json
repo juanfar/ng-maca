@@ -290,6 +290,46 @@
           }
         }
       }
+    },
+    "maca-click-outside": {
+      "projectType": "library",
+      "root": "projects/maca-click-outside",
+      "sourceRoot": "projects/maca-click-outside/src",
+      "prefix": "maca",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/maca-click-outside/tsconfig.lib.json",
+            "project": "projects/maca-click-outside/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/maca-click-outside/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/maca-click-outside/src/test.ts",
+            "tsConfig": "projects/maca-click-outside/tsconfig.spec.json",
+            "karmaConfig": "projects/maca-click-outside/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/maca-click-outside/tsconfig.lib.json",
+              "projects/maca-click-outside/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-maca",

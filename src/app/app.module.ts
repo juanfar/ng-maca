@@ -11,6 +11,8 @@ import { SpinnerComponent } from './showcase/spinner/spinner.component';
 import { MacaSpinnerModule } from 'maca-spinner';
 import { MacaToastModule } from 'maca-toast';
 import { ToastComponent } from './showcase/toast/toast.component';
+import { MacaClickOutsideModule } from 'maca-click-outside';
+import { ClickOutsideComponent } from './showcase/click-outside/click-outside.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ToastComponent } from './showcase/toast/toast.component';
     ExampleComponent,
     JoinPipeComponent,
     SpinnerComponent,
-    ToastComponent
+    ToastComponent,
+    ClickOutsideComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { ToastComponent } from './showcase/toast/toast.component';
     MacaExampleModule,
     MacaJoinPipeModule,
     MacaSpinnerModule,
-    MacaToastModule
+    MacaToastModule,
+    MacaClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]

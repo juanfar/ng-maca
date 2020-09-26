@@ -31,6 +31,10 @@
       "maca-toast": [
         "dist/maca-toast/maca-toast",
         "dist/maca-toast"
+      ],
+      "maca-click-outside": [
+        "dist/maca-click-outside/maca-click-outside",
+        "dist/maca-click-outside"
       ]
     }
   },
