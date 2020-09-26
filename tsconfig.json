@@ -27,6 +27,10 @@
       "maca-spinner": [
         "dist/maca-spinner/maca-spinner",
         "dist/maca-spinner"
+      ],
+      "maca-toast": [
+        "dist/maca-toast/maca-toast",
+        "dist/maca-toast"
       ]
     }
   },

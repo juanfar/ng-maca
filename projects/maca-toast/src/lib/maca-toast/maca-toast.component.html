@@ -1,0 +1,14 @@
+<div class="container-toast">
+
+  <div [@overlayAnimation]="{value: 'visible'}" class="maca-toast" [ngClass]="'bg-' + toast.status"
+    *ngFor="let toast of toastService.toasts">
+
+    <div class="maca-toast-title text-light">
+      <span class="maca-toast-title-message">{{toast.title}}</span>
+      <i class="fa fa-times maca-toast-title-icon" (click)="toastService.closeToast(toast)"></i>
+    </div>
+    <div class="maca-toast-content text-light">
+      <span>{{toast.message}}</span>
+    </div>
+  </div>
+</div>

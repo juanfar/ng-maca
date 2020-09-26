@@ -1,0 +1,40 @@
+maca-toast .container-toast {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+maca-toast .maca-toast {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: solid 1px #c8c8c8;
+}
+
+maca-toast .maca-toast-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+maca-toast .maca-toast-title i {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+}
+
+maca-toast .maca-toast-title-message {
+  width: 270px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+maca-toast .maca-toast-title-icon {
+  width: 10px;
+  display: inline-block;
+}
+
+maca-toast .maca-toast-content {
+  padding: 5px 0;
+  font-size: 14px;
+}

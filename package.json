@@ -22,6 +22,7 @@
     "maca-example": "^1.0.1",
     "maca-join-pipe": "1.0.0",
     "maca-spinner": "1.0.0",
+    "maca-toast": "1.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
