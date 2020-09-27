@@ -1,0 +1,55 @@
+maca-dropdown .maca-dropdown {
+  min-width: 100px;
+}
+
+maca-dropdown .form-control[readonly] {
+  background: #fff;
+  cursor: pointer;
+}
+
+maca-dropdown input:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+maca-dropdown .maca-dropdown button {
+  width: 32px;
+  height: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+}
+
+maca-dropdown .panel-items ul {
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #c8c8c8;
+  border-top: 0;
+}
+
+maca-dropdown .panel-items ul li{
+ list-style: none;
+ cursor: pointer;
+ padding: 5px;
+}
+
+maca-dropdown .panel-items ul li:hover {
+  background: #aefff48c;
+}
+
+maca-dropdown .no-results {
+  padding: 5px;
+  border: 1px solid #c8c8c8;
+  font-size: 11px;
+  font-style: italic;
+}
+
+maca-dropdown .maca-dropdown input {
+  border-radius: 0;
+  outline: 0;
+}

@@ -1,0 +1,31 @@
+<div class="maca-dropdown">
+  <div class="input-group" (click)="showPanelOptions()">
+    <input type="text" name="value" [(ngModel)]="valueShow" class="form-control" readonly>
+    <div class="input-group-append">
+      <button>
+        <i class="fa fa-caret-down"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="panel-items" *ngIf="showItems">
+    <div class="search input-group">
+      <input type="text" #search name="value" (keyup)="filter(search.value)" class="form-control">
+      <div class="input-group-append">
+        <button>
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="no-results" *ngIf="optionsShow.length === 0">
+      <span>{{labelNoresults}}</span>
+    </div>
+
+    <ul *ngIf="optionsShow.length > 0">
+      <li *ngFor="let item of optionsShow" (click)="selectItem(item)">
+        {{item.label}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -13,6 +13,8 @@ import { MacaToastModule } from 'maca-toast';
 import { ToastComponent } from './showcase/toast/toast.component';
 import { MacaClickOutsideModule } from 'maca-click-outside';
 import { ClickOutsideComponent } from './showcase/click-outside/click-outside.component';
+import { MacaDropdownModule } from 'maca-dropdown';
+import { DropdownComponent } from './showcase/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { ClickOutsideComponent } from './showcase/click-outside/click-outside.co
     JoinPipeComponent,
     SpinnerComponent,
     ToastComponent,
-    ClickOutsideComponent
+    ClickOutsideComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { ClickOutsideComponent } from './showcase/click-outside/click-outside.co
     MacaJoinPipeModule,
     MacaSpinnerModule,
     MacaToastModule,
-    MacaClickOutsideModule
+    MacaClickOutsideModule,
+    MacaDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

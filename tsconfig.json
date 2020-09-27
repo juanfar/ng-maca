@@ -35,6 +35,10 @@
       "maca-click-outside": [
         "dist/maca-click-outside/maca-click-outside",
         "dist/maca-click-outside"
+      ],
+      "maca-dropdown": [
+        "dist/maca-dropdown/maca-dropdown",
+        "dist/maca-dropdown"
       ]
     }
   },
