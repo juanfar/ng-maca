@@ -1,4 +1,4 @@
-<div class="maca-dropdown">
+<div class="maca-dropdown" macaClickOutside (clickOutside)="hidePanelItems()">
   <div class="input-group" (click)="showPanelOptions()">
     <input type="text" name="value" [(ngModel)]="valueShow" class="form-control" readonly>
     <div class="input-group-append">
@@ -8,7 +8,7 @@
     </div>
   </div>
 
-  <div class="panel-items" *ngIf="showItems">
+  <div class="panel-items" [@overlayAnimation]="{value: 'visible'}" *ngIf="showItems">
     <div class="search input-group">
       <input type="text" #search name="value" (keyup)="filter(search.value)" class="form-control">
       <div class="input-group-append">
@@ -24,7 +24,18 @@
 
     <ul *ngIf="optionsShow.length > 0">
       <li *ngFor="let item of optionsShow" (click)="selectItem(item)">
-        {{item.label}}
+
+        <ng-container *ngTemplateOutlet="template ? itemTemplate : defaultItemTemplate; context: {item: item}">
+        </ng-container>
+        <ng-template #defaultItemTemplate let-item="item">
+          {{item?.label}}
+        </ng-template>
+
+        <ng-template #itemTemplate let-item="item">
+          <ng-template
+            [ngTemplateOutlet]="template"
+            [ngTemplateOutletContext]="{item: item}"></ng-template>
+        </ng-template>
       </li>
     </ul>
   </div>

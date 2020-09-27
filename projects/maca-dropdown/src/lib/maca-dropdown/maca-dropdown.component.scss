@@ -1,5 +1,6 @@
 maca-dropdown .maca-dropdown {
   min-width: 100px;
+  position: relative;
 }
 
 maca-dropdown .form-control[readonly] {
@@ -21,6 +22,12 @@ maca-dropdown .maca-dropdown button {
   position: absolute;
   right: 0;
   z-index: 999;
+}
+
+maca-dropdown .panel-items {
+  position: absolute;
+  width: 100%;
+  background: #fff;
 }
 
 maca-dropdown .panel-items ul {
@@ -52,4 +59,8 @@ maca-dropdown .no-results {
 maca-dropdown .maca-dropdown input {
   border-radius: 0;
   outline: 0;
+}
+
+maca-dropdown .input-group-append {
+  margin-left: 0;
 }

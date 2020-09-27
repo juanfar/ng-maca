@@ -9,6 +9,7 @@ import { MacaSelectItem } from 'maca-dropdown';
 export class DropdownComponent implements OnInit {
 
   options: MacaSelectItem[];
+  valueSelect: string;
 
   constructor() { }
 
@@ -18,7 +19,14 @@ export class DropdownComponent implements OnInit {
       new MacaSelectItem('Label2', 'Value2'),
       new MacaSelectItem('Label3', 'Value3'),
       new MacaSelectItem('Label4', 'Value4'),
-    ]
+    ];
+
+    this.valueSelect = 'Value3';
+  }
+
+  selectItem(event) {
+    console.log(event);
+    
   }
 
 }

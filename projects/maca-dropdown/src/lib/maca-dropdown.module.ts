@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MacaClickOutsideModule } from 'maca-click-outside';
 import { MacaDropdownComponent } from './maca-dropdown/maca-dropdown.component';
 
 
@@ -9,7 +11,9 @@ import { MacaDropdownComponent } from './maca-dropdown/maca-dropdown.component';
   declarations: [MacaDropdownComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MacaClickOutsideModule
   ],
   exports: [MacaDropdownComponent]
 })

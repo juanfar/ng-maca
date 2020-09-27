@@ -1,1 +1,18 @@
-<maca-dropdown [options]="options"></maca-dropdown>
+<div class="row">
+  <div class="col-4 mt-4">
+
+    <maca-dropdown
+      [valueSelect]="valueSelect"
+      [options]="options"
+      [labelNoresults]="'Sin resultados'"
+      (select)="selectItem($event)">
+
+      <ng-template itemTemplate let-item="item">
+        {{item.label + " - " + item.value}}
+      </ng-template>
+    </maca-dropdown>
+
+    <p>Este texto no deberia verse al desplegar el dropdown</p>
+
+  </div>
+</div>
